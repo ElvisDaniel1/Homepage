@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400&display=swap');
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+
+  body {
+     height: 100vh;
+     background-color: rgba(169, 195, 65, 0.7);
+}
+ .home {
+    margin: 4rem;
+}
+ div.quote {
+  padding-bottom: 1px;
+    margin-bottom: 5rem;
+ }
+ div.quote .txt {
+     font-family: Cormorant, serif;
+     font-size: 35px;
+     font-weight: 400;
+     width: 20vw;
+     display: inline;
+     float:left;
+     position: absolute;
+    }
+
+img {
+  border-radius: 2.5px;
+}
+
+ div.quote img {
+     width: 250px;
+     height: 250px;
+     position: relative;
+     left: 30rem;
+     top: -0.5rem;
+}
+ .about {
+     margin-top: 3rem;
+     margin-bottom: 3rem;
+     width: 52vw;
+}
+ div.about p {
+     text-align: justify;
+     word-spacing: 0px;
+     font-size: 25px;
+}
+ div.about h1 {
+     font-size: 45px;
+}
+h2 {
+  font-size: 40px;
+}
+
+/*MOVIES PAGE*/
+.slider {
+  max-width: 550px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 550px;
+  height: 600px;
+  display: none;
+}
+
+.slides {
+  position: relative;
+}
+
+img.displaySlide {
+  display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  margin-top: -22px;
+  background-color: #003300;
+  color: white;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  border-radius: 2px;
+  border: none;
+}
+
+.next {
+  position: absolute;
+  margin-left: 510px;
+  /*right: 518px;*/
+  top: 350px;
+}
+.prev {
+  position: absolute;
+  top: 350px;
+}
+
+/*BOOKS PAGE*/
+div.titles .l {
+  max-width: 20vw;
+  display: inline-block;
+  position: absolute;
+}
+
+div.titles .r {
+  position: relative;
+  left: 400px;
+  max-width: 46vw;
+}
+div.titles .r p {
+  font-size: 25px;
+}
+
+div.books {
+  margin-bottom: 35rem;
+}
+
+/*VIDEOGAMES PAGE*/
+div.video iframe {
+  height:
+}
+div.quiz {
+  margin-top: 4rem;
+  font-size: 25px;
+  width: 52vw;
+}
+
+div.quiz img {
+  width: 700px;
+  height: 700px;
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+
+div.quiz input {
+  width: 700px;
+  border-radius: 2.5px;
+  border: 0.5px solid grey;
+  background-color: rgba(117, 109, 108, 0.5);
+}
+
+div.quiz input.final {
+  background-color: rgba(0, 51, 0, 1);
+  border: 1px solid black;
+  color: white;
+  font-weight: 600;
+  display: block;
+  margin-top: 4rem;
+  transition: background-color 0.7s;
+  margin-bottom: 4rem;
+}
+div.quiz input.final:hover {
+  background-color: rgba(0, 51, 0, 0.75);
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1180px) {
+  /*HOME PAGE*/
+ .home {
+  margin: 4rem;
+}
+div.about {
+  margin-top: 10rem;
+  width: 70vw;
+}
+div.quote .txt {
+  width: 40vw;
+}
+div.quote .txt p {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+/*VIDEO-GAMES PAGE*/
+div.video iframe {
+  width: 780px;
+}
+}
+
+@media (max-width: 900px) {
+  /*BOOKS PAGE*/
+div.titles .l {
+  position: static;
+  margin-bottom: 1.5rem;
+}
+  div.titles .r {
+    position: static;
+    max-width: 80vw;
+  }
+  div.books {
+    margin-bottom: 10rem;
+  }
+
+}
+
+@media (max-width: 850px) {
+  /*HOME PAGE*/
+  div.quote img {
+    width: 200px;
+    height: 200px;
+    left: 24rem;
+    top: 0.5rem;
+  }
+
+  /*VIDEO-GAMES PAGE*/
+  div.video iframe {
+    width: 580px;
+  }
+  div.quiz img {
+    width: 580px;
+    height: 580px;
+  }
+  div.quiz input {
+    width: 580px;
+  }
+
+ /*MOVIES PAGE*/
+ .next, .prev {
+  top: 400px;
+}
+
+}
+
+@media (max-width: 700px) {
+  /*MOVIES PAGE*/
+  .slider img {
+    width: 500px;
+    height: 600px;
+ }
+ .next {
+  margin-left: 455px;
+}
+}
+
+@media (max-width: 660px) {
+  /*HOME PAGE*/
+  div.quote img {
+    left: 16rem;
+  }
+  /*VIDEO-GAMES PAGE*/
+  div.video iframe {
+    width: 480px;
+  }
+  div.quiz img {
+    width: 480px;
+    height: 480px;
+  }
+  div.quiz input {
+    width: 480px;
+  }
+    /*MOVIES PAGE*/
+    .slider img {
+      width: 420px;
+      height: 550px;
+   }
+   .next {
+    right: 80px;
+   }
+   /*BOOKS PAGE*/
+   div.titles .r p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+
+  /*HOME PAGE*/
+ .home {
+  margin: 2rem;
+}
+  div.quote .txt {
+    width: 30vw;
+  }
+  div.quote .txt p {
+    font-weight: 500;
+    font-size: 25px;
+  }
+div.quote img {
+  width: 200px;
+  height: 200px;
+  left: 12rem;
+  top: 0.5rem;
+}
+div.about {
+  margin-top: 10rem;
+  width: 80vw;
+}
+div.about h1 {
+  font-size: 40px;
+}
+div.about p {
+  font-size: 20px;
+}
+
+
+/*VIDEO-GAMES PAGE*/
+div.video iframe {
+  width: 360px;
+}
+div.quiz {
+  width: 85vw;
+}
+div.quiz h2 {
+  font-size: 35px;
+}
+div.quiz p {
+  font-size: 20px;
+}
+div.quiz img {
+  width: 350px;
+  height: 350px;
+}
+div.quiz input {
+  width: 350px;
+}
+
+
+/*MOVIES PAGE*/
+  .next {
+    right: 70px;
+  }
+  .slider img {
+     width: 350px;
+     height: 450px;
+  }
+
+/*BOOKS PAGE*/
+div.titles .l {
+  position: static;
+  margin-bottom: 1.5rem;
+}
+  div.titles .r {
+    position: static;
+  }
+  div.books {
+    margin-bottom: 10rem;
+  }
+}
+
+
